@@ -1,0 +1,72 @@
+version: '2'
+services:
+  # client application
+  webpack.client:
+    build: ./glonass-client
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - wwwroot:/app/target
+      - ./glonass-client/src:/app/src
+
+  # nginx as reverse proxy and static server
+  nginx.proxy:
+    build: ./glonass-nginx-front-end
+    depends_on:
+      - node.cluster
+      - node.poll
+      - webpack.client
+    ports:
+      - "localhost:80:80"
+    volumes:
+      - wwwroot:/wwwroot:ro
+    networks:
+      - proxy
+
+  # node server application
+  node.cluster:
+    build: ./glonass-node-cluster
+    depends_on:
+      - redis.db
+    ports:
+      - "3000"
+    volumes:
+      - ./glonass-node-cluster/src:/app/src
+      - ./glonass-node-cluster/test:/app/test
+    networks:
+      - back-tier
+      - proxy
+    environment:
+      - NODE_ENV=development
+
+  # node poll server for geoapi
+  node.poll:
+    build: ./glonass-node-geoapi-polling-server
+    depends_on:
+      - redis.db
+    volumes:
+      - ./glonass-node-geoapi-polling-server/src:/app/src
+      - ./glonass-node-geoapi-polling-server/spec:/app/spec
+    environment:
+      - NODE_ENV=development
+      - DEBUG=app-info,app-error,app-debug,redis-info,redis-error,redis-debug
+    networks:
+      - back-tier
+
+  # redis as message queue service for node.polling and node.cluster
+  redis.db:
+    image: redis
+    networks:
+      - back-tier
+
+volumes:
+  # shared volume between nginx and webpack
+  wwwroot:
+    driver: local
+
+networks:
+  back-tier:
+    driver: bridge
+  proxy:
+    driver: bridge
+    
