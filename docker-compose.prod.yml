@@ -45,6 +45,7 @@ services:
     environment:
       - NODE_ENV=production
       - DEBUG=app-info,app-error,app-debug,redis-info,redis-error,redis-debug
+      - API_KEY=TYPE_HERE_YOUR_FIRE_GROUP_GEO_API_KEY
     networks:
       - back-tier
 
