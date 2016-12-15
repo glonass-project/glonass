@@ -2,7 +2,7 @@ version: '2'
 services:
   # client application
   webpack.client:
-    build: mikefaraponov/glonass-client
+    image: mikefaraponov/glonass-client
     environment:
       - NODE_ENV=production
     volumes:
@@ -10,7 +10,7 @@ services:
 
   # nginx as reverse proxy and static server
   nginx.proxy:
-    build: mikefaraponov/glonass-nginx-front-end
+    image: mikefaraponov/glonass-nginx-front-end
     depends_on:
       - node.cluster
       - node.poll
@@ -24,7 +24,7 @@ services:
 
   # node server application
   node.cluster:
-    build: mikefaraponov/glonass-node-cluster
+    image: mikefaraponov/glonass-node-cluster
     command: npm start
     depends_on:
       - redis.db
