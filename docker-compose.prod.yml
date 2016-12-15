@@ -25,6 +25,7 @@ services:
   # node server application
   node.cluster:
     build: mikefaraponov/glonass-node-cluster
+    command: npm start
     depends_on:
       - redis.db
     ports:
@@ -33,11 +34,12 @@ services:
       - back-tier
       - proxy
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production
 
   # node poll server for geoapi
   node.poll:
     image: mikefaraponov/glonass-node-geoapi-polling-server
+    command: npm start
     depends_on:
       - redis.db
     environment:
