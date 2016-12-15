@@ -17,7 +17,7 @@ services:
       - node.poll
       - webpack.client
     ports:
-      - "localhost:80:80"
+      - "0.0.0.0:80:80"
     volumes:
       - wwwroot:/wwwroot:ro
     networks:
