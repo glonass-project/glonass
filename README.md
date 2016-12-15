@@ -24,14 +24,17 @@ Used as MQ service and storage of active users count.
 If you want to contribute to this project you should first build this app by yourself in few simple steps:
 
 1. Before that you should already have python, pip, docker, docker-compose.
+
 2. Run this script: 
-  ```sh
-    git clone https://github.com/glonass-project/glonass.git
-    cd glonass
-    git clone https://github.com/glonass-project/glonass-node-geoapi-polling-server.git
-    git clone https://github.com/glonass-project/glonass-node-cluster.git
-    git clone https://github.com/glonass-project/glonass-client.git
-    git cloen https://github.com/glonass-project/glonass-nginx-front-end.git
-    docker-compose up --build
-  ```
-3. That's it!
+
+```sh
+  git clone https://github.com/glonass-project/glonass.git
+  cd glonass
+  git clone https://github.com/glonass-project/glonass-node-geoapi-polling-server.git
+  git clone https://github.com/glonass-project/glonass-node-cluster.git
+  git clone https://github.com/glonass-project/glonass-client.git
+  git cloen https://github.com/glonass-project/glonass-nginx-front-end.git
+  docker-compose up --build
+```
+
+That's it!
