@@ -1,4 +1,5 @@
-# glonass
+# glonass - Geo Tracking System
+![Image of Yaktocat](https://github.com/glonass-project/glonass/blob/master/demo-desktop.png)
 Project contains 4 repos (as many as containers) and 1 more container for redis. There are:
 
 ### [glonass-node-geoapi-polling-server](https://github.com/glonass-project/glonass-node-geoapi-polling-server)
