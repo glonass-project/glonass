@@ -35,6 +35,7 @@ services:
       - proxy
     environment:
       - NODE_ENV=production
+      - DEBUG=app-info
 
   # node poll server for geoapi
   node.poll:
