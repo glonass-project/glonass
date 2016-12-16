@@ -1,7 +1,9 @@
 # glonass - Geo Tracking System
-![Image of Yaktocat](https://github.com/glonass-project/glonass/blob/master/demo-desktop.png)
-![Image of Yaktocat](https://github.com/glonass-project/glonass/blob/master/demo-mobile-1.png)
-![Image of Yaktocat](https://github.com/glonass-project/glonass/blob/master/demo-mobile-2.png)
+![Demo-1](https://github.com/glonass-project/glonass/blob/master/demo-desktop.png)
+![Demo-2](https://github.com/glonass-project/glonass/blob/master/demo-desktop-2.png)
+![Demo-3](https://github.com/glonass-project/glonass/blob/master/demo-mobile-1.png)
+![Demo-4](https://github.com/glonass-project/glonass/blob/master/demo-mobile-2.png)
+![Demo-5](https://github.com/glonass-project/glonass/blob/master/demo-mobile-3.png)
 
 Project contains 4 repos (as many as containers) and 1 more container for redis. There are:
 
