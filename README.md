@@ -25,7 +25,7 @@ Client side application written using React and socket.io with leaflet.
 Reverse proxy for glonass-node-cluster application. Also serves client side application and static files.
 
 ### redis.db
-Used as MQ service and storage of active users count.
+Used as MQ server.
 
 ## Development
 If you want to contribute to this project you should first build this app by yourself in few simple steps:
