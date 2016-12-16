@@ -44,7 +44,11 @@ If you want to contribute to this project you should first build this app by you
 That's it!
 
 ## Production
-If you want to build in production, you first need to send message, then I can add you as collaborator. I have some issues with production unauthorized access to docker hub registers, but if you know how to fix that also send me.
+In production build you don't need all repose from previous step, you just should:
 ```sh
   docker-compose -f docker-compose.prod.yml up
 ```
+That's all.
+
+## Credits
+[@mikefaraponov](https://github.com/mikefaraponov)
