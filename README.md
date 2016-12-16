@@ -40,7 +40,7 @@ If you want to contribute to this project you should first build this app by you
   git clone https://github.com/glonass-project/glonass-node-geoapi-polling-server.git
   git clone https://github.com/glonass-project/glonass-node-cluster.git
   git clone https://github.com/glonass-project/glonass-client.git
-  git cloen https://github.com/glonass-project/glonass-nginx-front-end.git
+  git clone https://github.com/glonass-project/glonass-nginx-front-end.git
   docker-compose up --build
 ```
 
