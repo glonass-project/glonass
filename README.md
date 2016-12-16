@@ -4,6 +4,7 @@
 ![Demo-3](https://github.com/glonass-project/glonass/blob/master/demo-mobile-1.png)
 ![Demo-4](https://github.com/glonass-project/glonass/blob/master/demo-mobile-2.png)
 ![Demo-5](https://github.com/glonass-project/glonass/blob/master/demo-mobile-3.png)
+![Demo-6](https://github.com/glonass-project/glonass/blob/master/demo-mobile-4.png)
 
 Project contains 4 repos (as many as containers) and 1 more container for redis. There are:
 
