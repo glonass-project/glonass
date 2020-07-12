@@ -1,4 +1,4 @@
-# glonass - Geo Tracking System
+# glonass - Transport Tracking System
 ![Demo-1](https://github.com/glonass-project/glonass/blob/master/demo-desktop.png)
 ![Demo-2](https://github.com/glonass-project/glonass/blob/master/demo-desktop-2.png)
 ![Demo-3](https://github.com/glonass-project/glonass/blob/master/demo-mobile-1.png)
@@ -53,5 +53,6 @@ In production build you don't need all repose from previous step, you just shoul
 ```
 That's all.
 
-## Credits
-[@mikefaraponov](https://github.com/mikefaraponov)
+## Sponsors
+[ScaleChamp](https://www.scalechamp.com/) - Victorious multi-cloud Managed Databases provider.
+
